@@ -1,7 +1,7 @@
 //function formValidation()
 //{
 	
-	
+	//OnBlur function on Username
 	function check()
 	{
 		//alert("hi");
@@ -28,13 +28,15 @@
 		}
 }
 
+// OnBlur function on Password
 function showIt()
 {
 			var umail = document.registration.email;
             var pass1 = document.registration.passwd;
+			var textArea = document.registration.showData;
 			
-			alert("You have entered following details :"+"Email: "+umail.value+"     Password: "+pass1.value);
-			
-            //document.write("<h3>Username : </h3>" + umail + "<br>");
-            //document.write("<h3>Email : </h3>" + pass1);
+			//alert("You have entered following details :"+"Email: "+umail.value+"     Password: "+pass1.value);
+			textArea.value = ("You have entered following details :"+"Email: "+umail.value+"     Password: "+pass1.value);
+          //document.registration.showData.write("hi");
+            //document.registration.showData.write("<h3>Password : </h3>" + pass1 + "<br>").innerHTML;
 }
