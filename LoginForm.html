@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<meta charset="utf-8">
+		<title>LOGIN FORM</title>
+		<script src="formValid.js"></script>
+	</head>
+	
+	<body onload="document.registration.email.focus();">
+		<h1>Registraion Form</h1>
+			<form name='registration'>
+				
+				<label for="email">Email: </label>
+				<input type="text" name="email" onblur = "check()"><br><br>
+				<label for="passwd">Password: </label>
+				<input type="password" name="passwd" disabled onblur = "showIt()"><br><br>
+				<input type="submit" name="submit" value="Submit">
+			
+			</form>
+	</body>
+</html>
